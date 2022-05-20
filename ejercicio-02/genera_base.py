@@ -8,7 +8,7 @@ Base = declarative_base()
 
 from sqlalchemy import Column, Integer, String
 
-class Country(Base):
+class country(Base):
     __tablename__ = 'country_codes'
     
     id = Column(Integer, primary_key=True)
