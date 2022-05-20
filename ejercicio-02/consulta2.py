@@ -11,6 +11,6 @@ engine = create_engine('sqlite:///country.db')
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# Presentar todos los países del continente americano
-primero = session.query(country).filter(country.continent.in_(['NA','SA'])).order_by(country.npais).all()
-print(primero)
+# Presentar los países de Asía, ordenados por el atributo Dial.
+segundo = session.query(country).filter(country.continent=="AS").order_by(country.dial).all()
+print(segundo)
