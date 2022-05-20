@@ -13,4 +13,4 @@ session = Session()
 
 # Presentar los lenguajes de cada país.
 tercero = session.query(country.npais,country.languages).all()
-print(country)
+print(tercero)

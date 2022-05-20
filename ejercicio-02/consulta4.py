@@ -13,4 +13,4 @@ session = Session()
 
 # Presentar los países ordenados por la capital, siempre que el país pertenezca a Europa
 cuarta = session.query(country.npais,country.capital).filter(country.continent=='EU').order_by(country.capital).all()
-print(country)
+print(cuarta)
